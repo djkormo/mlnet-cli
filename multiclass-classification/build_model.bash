@@ -1,0 +1,1 @@
+./mlnet auto-train --task multiclass-classification --dataset "iris.csv" --label-column-index 5 --has-header true --max-exploration-time 60
