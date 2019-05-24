@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #root directory of mlnet tool 
 DIR=$HOME/.dotnet/tools
 
