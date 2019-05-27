@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.ML;
-
+/* based on https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/serve-model-web-api-ml-net */
 namespace Djkormo.Function
 {
     public class Program
@@ -16,6 +16,7 @@ namespace Djkormo.Function
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
+            Console.WriteLine("Running CreateWebHostBuilder in Program Class.");
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
