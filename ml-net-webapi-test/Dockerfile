@@ -14,4 +14,5 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.1
 WORKDIR /app
 COPY --from=build-env /app/out .
+COPY model/model.zip model/
 ENTRYPOINT ["dotnet", "ml-net-webapi-test.dll"]

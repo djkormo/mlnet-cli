@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {}
+    "D:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {}
   },
   "projects": {
-    "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {
+    "D:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
+        "projectUniqueName": "D:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
         "projectName": "ml-net-webapi-test",
-        "projectPath": "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
+        "projectPath": "D:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
         "packagesPath": "C:\\Users\\kpudlowski\\.nuget\\packages\\",
-        "outputPath": "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\obj\\",
+        "outputPath": "D:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -20,13 +20,13 @@
           "C:\\Users\\kpudlowski\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp2.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -37,18 +37,18 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.1, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.1.1, )"
             },
             "Microsoft.Extensions.ML": {
               "target": "Package",
@@ -61,7 +61,7 @@
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.2.0, )",
+              "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
