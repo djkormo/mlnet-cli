@@ -6,8 +6,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.ML;
 using Microsoft.Extensions.Logging;
+using Swashbuckle.AspNetCore.Swagger;
 using Djkormo.Function;
 
+/* based on for swagger https://docs.microsoft.com/pl-pl/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio-code */
 namespace Djkormo.Function
 {
     class Startup
@@ -29,6 +31,29 @@ namespace Djkormo.Function
         services.AddPredictionEnginePool<ModelInput, ModelOutput>()
         .FromFile("model/model.zip");
         Console.WriteLine("Loading model/model.zip");
+
+        // Register the Swagger generator, defining 1 or more Swagger documents
+        services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Info
+    {
+        Version = "v1",
+        Title = "ToDo API",
+        Description = "A simple example ASP.NET Core Web API",
+        TermsOfService = "None",
+        Contact = new Contact
+        {
+            Name = "Shayne Boyer",
+            Email = string.Empty,
+            Url = "https://twitter.com/spboyer"
+        },
+        License = new License
+        {
+            Name = "Use under LICX",
+            Url = "https://example.com/license"
+        }
+    });
+});
 }
 
 
@@ -36,6 +61,15 @@ namespace Djkormo.Function
     public void Configure(IApplicationBuilder app,IHostingEnvironment env)
     {
 
+      app.UseSwagger();
+
+    // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+    // specifying the Swagger JSON endpoint.
+      app.UseSwaggerUI(c =>
+      {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+        c.RoutePrefix = string.Empty;
+      });
         if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
