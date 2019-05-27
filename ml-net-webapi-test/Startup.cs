@@ -25,6 +25,7 @@ namespace Djkormo.Function
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+       
         services.AddPredictionEnginePool<ModelInput, ModelOutput>()
         .FromFile("model/model.zip");
         Console.WriteLine("Loading model/model.zip");
@@ -32,11 +33,17 @@ namespace Djkormo.Function
 
 
     // Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app)
+    public void Configure(IApplicationBuilder app,IHostingEnvironment env)
     {
        ///
-        app.UseHttpsRedirection();
-        app.UseStaticFiles();
+        //app.UseHttpsRedirection();
+       // app.UseStaticFiles();
+        if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+                Console.WriteLine("Loading UseDeveloperExceptionPage()");
+            }
+
         app.UseMvc();
         Console.WriteLine("Loading Configure()");
     }

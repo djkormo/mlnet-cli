@@ -15,13 +15,24 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ml_net_webapi_test": {
+
+    
+    "Djkormo.Function": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/predictor/sentimentprediction?SentimentText=ML.NET is awesome!",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000/"
+    },
+    "Djkormo.Function1": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
-    }
+    },
   }
 }
