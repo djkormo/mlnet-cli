@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\developing\\ML\\ml.net\\github\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {}
+    "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {}
   },
   "projects": {
-    "C:\\developing\\ML\\ml.net\\github\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {
+    "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\developing\\ML\\ml.net\\github\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
+        "projectUniqueName": "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
         "projectName": "ml-net-webapi-test",
-        "projectPath": "C:\\developing\\ML\\ml.net\\github\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
+        "projectPath": "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\ml-net-webapi-test.csproj",
         "packagesPath": "C:\\Users\\kpudlowski\\.nuget\\packages\\",
-        "outputPath": "C:\\developing\\ML\\ml.net\\github\\ml-net-webapi-test\\obj\\",
+        "outputPath": "d:\\skills\\ML.NET\\git\\mlnet-cli\\ml-net-webapi-test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\kpudlowski\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kpudlowski\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

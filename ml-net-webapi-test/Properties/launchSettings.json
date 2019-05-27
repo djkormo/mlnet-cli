@@ -20,7 +20,7 @@
     "Djkormo.Function": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/predictor/sentimentprediction?SentimentText=ML.NET is awesome!",
+      "launchUrl": "api/predict/sentimentprediction",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

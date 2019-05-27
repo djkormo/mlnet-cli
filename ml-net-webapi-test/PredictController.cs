@@ -16,14 +16,18 @@ public class PredictController : ControllerBase
     {
         _predictionEnginePool = predictionEnginePool;
     }
-    // POST api/predictor/sentimentprediction?SentimentText=ML.NET is awesome!
-    [HttpPost]
+    // POST api/predict/sentimentprediction?SentimentText=ML.NET is awesome!
+    // GET api/predict/sentimentprediction?SentimentText=ML.NET is awesome!
+    [HttpGet]
     [Route("sentimentprediction")]
-    public ActionResult<string> Post([FromBody] ModelInput input)
+    // TODO pobranie Jsona ... na wejsciu ...
+    public ActionResult<string> Get([FromBody] ModelInput input)
+    //public async Task<IActionResult> Get([FromQuery(Name = "query")] string query)
     {
         if(!ModelState.IsValid)
         {
             Console.WriteLine("Bad request");
+            throw new ArgumentException("Classify service cannot be null.");
             return BadRequest();
         }
         Console.WriteLine("Beginning prediction");

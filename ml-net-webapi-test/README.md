@@ -2,4 +2,7 @@
 
 #### Test: 
 
-##### curl -X POST -H "Content-Type: application/json" -d '{"SentimentText":"Who are you to be my enemy!"}'  http://localhost:5000/api/predictor/sentimentprediction
+##### curl -X POST -H "Content-Type: application/json" -d '{"SentimentText":"Who are you to be my enemy!"}'  http://localhost:5000/api/predict/sentimentprediction/
+
+
+##### curl -X GET -H "Content-Type: application/json" -d '{"SentimentText":"Who are you to be my enemy!"}'  http://localhost:5000/api/predict/sentimentprediction/
