@@ -2,8 +2,8 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.ML;
 using Microsoft.Extensions.Logging;
-using Djkormo.Function;
-namespace Djkormo.Function
+using Djkormo.Web;
+namespace Djkormo.Web
 {
 [Route("api/[controller]")]
 [ApiController]
@@ -16,26 +16,29 @@ public class PredictController : ControllerBase
     {
         _predictionEnginePool = predictionEnginePool;
     }
-    // POST api/predict/sentimentprediction?SentimentText=ML.NET is awesome!
-    // GET api/predict/sentimentprediction?SentimentText=ML.NET is awesome!
-    [HttpGet]
-    [Route("sentiment")]
+    // POST api/predict/model?SentimentText=Good
+    // GET api/predict/model?SentimentText=Scary
+    [HttpPost]
+    [Route("model")]
     // TODO pobranie Jsona ... na wejsciu ...
-    public ActionResult<string> Get([FromBody] ModelInput input)
+    public ActionResult<string> Post([FromBody] ModelInput input)
     //public async Task<IActionResult> Get([FromQuery(Name = "query")] string query)
     {
         if(!ModelState.IsValid)
         {
             Console.WriteLine("Bad request");
-            throw new ArgumentException("Classify service cannot be null.");
+            //throw new ArgumentException("Classify service cannot be null.");
             return BadRequest();
         }
         Console.WriteLine("Beginning prediction");
+        Console.WriteLine("input->:",input);
         ModelOutput prediction = _predictionEnginePool.Predict(input);
+        Console.WriteLine("output->:",prediction);
 
-        string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
+        //string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
+        string output = prediction.Prediction;
         Console.WriteLine("Ending prediction");
-        return Ok(sentiment);
+        return Ok(output);
     }
 }
 }

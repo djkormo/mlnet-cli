@@ -7,10 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.ML;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
-using Djkormo.Function;
+using Djkormo.Web;
 
-/* based on for swagger https://docs.microsoft.com/pl-pl/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio-code */
-namespace Djkormo.Function
+/*  for swagger based on 
+    https://docs.microsoft.com/pl-pl/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio-code 
+*/
+namespace Djkormo.Web
 {
     class Startup
     {
@@ -72,7 +74,7 @@ namespace Djkormo.Function
       });
         if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
                 Console.WriteLine("Loading UseDeveloperExceptionPage()");
             }
 
