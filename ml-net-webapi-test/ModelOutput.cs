@@ -2,7 +2,7 @@ using Microsoft.ML.Data;
 
 namespace Djkormo.Function
 {
-    public class ModelOutput : ModelInput
+    public class ModelOutput //: ModelInput
 {
 
     [ColumnName("PredictedLabel")]

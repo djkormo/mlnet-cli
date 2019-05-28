@@ -19,7 +19,7 @@ public class PredictController : ControllerBase
     // POST api/predict/sentimentprediction?SentimentText=ML.NET is awesome!
     // GET api/predict/sentimentprediction?SentimentText=ML.NET is awesome!
     [HttpGet]
-    [Route("sentimentprediction")]
+    [Route("sentiment")]
     // TODO pobranie Jsona ... na wejsciu ...
     public ActionResult<string> Get([FromBody] ModelInput input)
     //public async Task<IActionResult> Get([FromQuery(Name = "query")] string query)

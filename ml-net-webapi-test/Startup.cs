@@ -34,23 +34,23 @@ namespace Djkormo.Function
 
         // Register the Swagger generator, defining 1 or more Swagger documents
         services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new Info
-    {
-        Version = "v1",
-        Title = "ToDo API",
-        Description = "A simple example ASP.NET Core Web API",
-        TermsOfService = "None",
-        Contact = new Contact
         {
-            Name = "Shayne Boyer",
+            c.SwaggerDoc("v1", new Info
+            {
+                Version = "v1",
+                Title = "Prediction API",
+                Description = "A simple ML.NET example with Core Web API",
+                TermsOfService = "None",
+                Contact = new Contact
+            {
+            Name = "Krzysztof Pudlowski",
             Email = string.Empty,
-            Url = "https://twitter.com/spboyer"
+            Url = "http://wchmurze.cloud"
         },
         License = new License
         {
             Name = "Use under LICX",
-            Url = "https://example.com/license"
+            Url = "https://github.com/djkormo/mlnet-cli"
         }
     });
 });
