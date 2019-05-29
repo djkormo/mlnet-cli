@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <RootNamespace>Djkormo.Function</RootNamespace>
+    <RootNamespace>Djkormo.Web</RootNamespace>
   </PropertyGroup>
 
 

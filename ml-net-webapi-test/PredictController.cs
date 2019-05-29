@@ -2,6 +2,7 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.ML;
 using Microsoft.Extensions.Logging;
+using System.Reflection;
 using Djkormo.Web;
 namespace Djkormo.Web
 {
@@ -16,28 +17,41 @@ public class PredictController : ControllerBase
     {
         _predictionEnginePool = predictionEnginePool;
     }
-    // POST api/predict/model?SentimentText=Good
-    // GET api/predict/model?SentimentText=Scary
+    // POST api/predict/model
+    
     [HttpPost]
     [Route("model")]
-    // TODO pobranie Jsona ... na wejsciu ...
+
     public ActionResult<string> Post([FromBody] ModelInput input)
-    //public async Task<IActionResult> Get([FromQuery(Name = "query")] string query)
+    
     {
         if(!ModelState.IsValid)
         {
             Console.WriteLine("Bad request");
-            //throw new ArgumentException("Classify service cannot be null.");
+            
             return BadRequest();
         }
         Console.WriteLine("Beginning prediction");
-        Console.WriteLine("input->:",input);
-        ModelOutput prediction = _predictionEnginePool.Predict(input);
-        Console.WriteLine("output->:",prediction);
+        Console.WriteLine("input->:");
+        Type tinput = input.GetType(); // Where obj is object whose properties you need.
+        PropertyInfo [] pin = tinput.GetProperties();
+        foreach (PropertyInfo p in pin)
+        {
+            System.Console.WriteLine(p.Name + " : " + p.GetType()+" : "+p.ToString() );
+        }
 
-        //string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
+        ModelOutput prediction = _predictionEnginePool.Predict(input);
+        Console.WriteLine("output->:");
+
+        Type toutput = prediction.GetType(); // Where obj is object whose properties you need.
+        PropertyInfo [] pout = toutput.GetProperties();
+        foreach (PropertyInfo p in pout)
+        {
+            System.Console.WriteLine(p.Name + " : " + p.GetType()+" : "+p.ToString() );
+        }
+        
         string output = prediction.Prediction;
-        Console.WriteLine("Ending prediction");
+        Console.WriteLine("Ending prediction:" + output);
         return Ok(output);
     }
 }

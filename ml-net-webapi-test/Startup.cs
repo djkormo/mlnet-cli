@@ -52,7 +52,7 @@ namespace Djkormo.Web
         License = new License
         {
             Name = "Use under LICX",
-            Url = "https://github.com/djkormo/mlnet-cli"
+            Url = "https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet"
         }
     });
 });

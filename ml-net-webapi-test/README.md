@@ -10,7 +10,12 @@
 
 #### Test: 
 
-##### curl -X POST -H "Content-Type: application/json" -d '{"SentimentText":"Who are you to be my enemy!"}'  http://localhost:5000/api/predict/sentimentprediction/
 
+##### Iris-versicolor
+##### curl -X POST "http://localhost:5000/api/Predict/model" -H "accept: text/plain" -H "Content-Type: application/json-patch+json" -d "{ \"sepalLength\": 4, \"sepalWidth\": 2, \"petalLength\": 3, \"petalWidth\": 3, \"label\": \"string\"}"
 
-##### curl -X GET -H "Content-Type: application/json" -d '{"SentimentText":"Who are you to be my enemy!"}'  http://localhost:5000/api/predict/sentimentprediction/
+##### Iris-setosa
+##### curl -X POST "http://localhost:5000/api/Predict/model" -H "accept: text/plain" -H "Content-Type: application/json-patch+json" -d "{ \"sepalLength\": 1.1, \"sepalWidth\": 1.1, \"petalLength\": 2.1, \"petalWidth\": 2.1, \"label\": \"string\"}"
+
+##### Iris-virginica
+##### curl -X POST "http://localhost:5000/api/Predict/model" -H "accept: text/plain" -H "Content-Type: application/json-patch+json" -d "{ \"sepalLength\": 3.1, \"sepalWidth\": 3.1, \"petalLength\": 2.1, \"petalWidth\": 2.1, \"label\": \"string\"}"
