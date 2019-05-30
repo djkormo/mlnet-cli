@@ -74,7 +74,7 @@ namespace Djkormo.Web
       });
         if (env.IsDevelopment())
             {
-                //app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();
                 Console.WriteLine("Loading UseDeveloperExceptionPage()");
             }
 
