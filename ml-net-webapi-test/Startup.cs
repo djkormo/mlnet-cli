@@ -30,6 +30,7 @@ namespace Djkormo.Web
     {
         services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         services.AddMemoryCache();
+        // loading model with service 
         services.AddPredictionEnginePool<ModelInput, ModelOutput>()
         .FromFile("model/model.zip");
         Console.WriteLine("Loading model/model.zip");
