@@ -2,7 +2,7 @@
     "extensions": [
       {
         "name": "Startup",
-        "typename": "HttpTriggerMLNet.Startup, HttpTriggerMLNet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+        "typename": "PredictFunctionsApp.Startup, PredictFunctionsApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
       }
     ]
   }
