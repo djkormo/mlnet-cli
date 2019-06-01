@@ -3,6 +3,7 @@ using Microsoft.Azure.WebJobs.Hosting;
 using Microsoft.Extensions.ML;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
+using Microsoft.ML.Data;
 using PredictFunctionsApp;
 
 [assembly: WebJobsStartup(typeof(Startup))]
