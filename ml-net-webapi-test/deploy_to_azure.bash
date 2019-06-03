@@ -117,7 +117,7 @@ az container create \
 # clear
 # koty
 #curl -X POST http://ml-net-webapp$RND.northeurope.azurecontainer.io/image -F imageData=@images/cat1.jpg
-curl -X POST http://ml-net-webapp$RND.northeurope.azurecontainer.io:5000/api/Predict/model  -d "{  \"sepalLength\": 0,  \"sepalWidth\": 0,  \"petalLength\": 0,  \"petalWidth\": 0, \"label\": \"string\"}"
+#curl -X POST http://ml-net-webapp$RND.northeurope.azurecontainer.io:5000/api/Predict/model  -d "{  \"sepalLength\": 0,  \"sepalWidth\": 0,  \"petalLength\": 0,  \"petalWidth\": 0, #\"label\": \"string\"}"
 
 
 #curl -X POST http://ml-net-webapp$RND.northeurope.azurecontainer.io/image -F imageData=@images/dog1.jpg
