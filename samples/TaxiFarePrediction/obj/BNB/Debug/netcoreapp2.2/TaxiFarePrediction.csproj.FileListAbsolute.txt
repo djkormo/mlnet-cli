@@ -1,0 +1,11 @@
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\bin\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.deps.json
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\bin\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.runtimeconfig.json
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\bin\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.runtimeconfig.dev.json
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\bin\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.dll
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\bin\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.pdb
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\obj\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.csprojAssemblyReference.cache
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\obj\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.csproj.CoreCompileInputs.cache
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\obj\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.AssemblyInfoInputs.cache
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\obj\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.AssemblyInfo.cs
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\obj\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.dll
+C:\developing\ML\ml.net\github\mlnet-cli\TaxiFarePrediction\obj\BNB\Debug\netcoreapp2.2\TaxiFarePrediction.pdb

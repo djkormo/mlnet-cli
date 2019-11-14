@@ -1,0 +1,11 @@
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\obj\BNB\Debug\netcoreapp2.2\HelloWorld.csprojAssemblyReference.cache
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\obj\BNB\Debug\netcoreapp2.2\HelloWorld.csproj.CoreCompileInputs.cache
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\obj\BNB\Debug\netcoreapp2.2\HelloWorld.AssemblyInfoInputs.cache
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\obj\BNB\Debug\netcoreapp2.2\HelloWorld.AssemblyInfo.cs
+c:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\bin\BNB\Debug\netcoreapp2.2\HelloWorld.deps.json
+c:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\bin\BNB\Debug\netcoreapp2.2\HelloWorld.runtimeconfig.json
+c:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\bin\BNB\Debug\netcoreapp2.2\HelloWorld.runtimeconfig.dev.json
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\bin\BNB\Debug\netcoreapp2.2\HelloWorld.dll
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\bin\BNB\Debug\netcoreapp2.2\HelloWorld.pdb
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\obj\BNB\Debug\netcoreapp2.2\HelloWorld.dll
+C:\developing\ML\ml.net\github\mlnet-cli\HelloWorld\obj\BNB\Debug\netcoreapp2.2\HelloWorld.pdb

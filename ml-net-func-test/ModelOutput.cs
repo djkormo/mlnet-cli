@@ -3,7 +3,7 @@ using Microsoft.ML.Data;
 
 namespace PredictFunctionsApp
 {
-    public class ModelOutput : ModelInput
+    public class ModelOutput 
 {
 
     // ColumnName attribute is used to change the column name from

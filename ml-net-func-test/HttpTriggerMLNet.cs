@@ -23,8 +23,9 @@ namespace PredictFunctionsApp
     [FunctionName("PredictionService")]
     
     public async Task<IActionResult> Run(
-    [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req, // was post
-    ILogger log)
+    [HttpTrigger(AuthorizationLevel.Function, "get","post", Route = null)] HttpRequest req, // was post
+  
+   ILogger log)
     {
     log.LogInformation("C# HTTP trigger function processed a request.");
 
@@ -55,9 +56,9 @@ namespace PredictFunctionsApp
     ModelOutput prediction = _predictionEnginePool.Predict(input);
     log.LogInformation("### Output data:");
     //Convert prediction to string
-    //string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
-    //string output =prediction.Prediction;
-    string output="Awesome function!" +requestBody;  
+    string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
+    string output =prediction.Prediction;
+    //string output="Awesome function!" +requestBody;  
     //Return Prediction
     return (ActionResult) new OkObjectResult(output);
     } /* of Run */

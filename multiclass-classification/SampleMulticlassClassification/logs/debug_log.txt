@@ -1,0 +1,49 @@
+Inferring Columns ...
+Creating Data loader ...
+Loading data ...
+Exploring multiple ML algorithms and settings to find you the best model for ML task: multiclass-classification
+For further learning check: https://aka.ms/mlnet-cli
+|     Trainer                              MicroAccuracy  MacroAccuracy  Duration #Iteration                     |
+[Source=AutoML, Kind=Trace] Channel started
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=AveragedPerceptronOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+[Source=AutoML, Kind=Trace] 1	0,888888888888889	00:00:01.1093865	xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=AveragedPerceptronOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+|1    AveragedPerceptronOva                       0,8889         0,8889       1,1          0                     |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=SdcaMaximumEntropyMulti{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+[Source=AutoML, Kind=Trace] 2	0,777777777777778	00:00:00.2814859	xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=SdcaMaximumEntropyMulti{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+|2    SdcaMaximumEntropyMulti                     0,7778         0,8222       0,3          0                     |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} tr=LightGbmMulti{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=-
+[Source=AutoML, Kind=Trace] 3	0,777777777777778	00:00:00.4875399	xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} tr=LightGbmMulti{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=-
+|3    LightGbmMulti                               0,7778         0,8222       0,5          0                     |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=SymbolicSgdLogisticRegressionOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+[Source=AutoML, Kind=Trace] 4	0,666666666666667	00:00:00.2795636	xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=SymbolicSgdLogisticRegressionOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+|4    SymbolicSgdLogisticRegressionOva            0,6667         0,6667       0,3          0                     |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} tr=FastTreeOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+[Source=AutoML, Kind=Trace] 5	0,666666666666667	00:00:00.4069137	xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} tr=FastTreeOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+|5    FastTreeOva                                 0,6667         0,7556       0,4          0                     |
+[Source=AutoML, Kind=Trace] Evaluating pipeline xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=LinearSvmOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+[Source=AutoML, Kind=Trace] 6	1	00:00:00.1275291	xf=ValueToKeyMapping{ col=Label:Label} xf=OneHotEncoding{ col=SepalLength:SepalLength col=SepalWidth:SepalWidth col=PetalLength:PetalLength col=PetalWidth:PetalWidth} xf=ColumnConcatenating{ col=Features:SepalLength,SepalWidth,PetalLength,PetalWidth} xf=Normalizing{ col=Features:Features} tr=LinearSvmOva{} xf=KeyToValueMapping{ col=PredictedLabel:PredictedLabel} cache=+
+|6    LinearSvmOva                                1,0000         1,0000       0,1          0                     |
+Retrieving best pipeline ...
+
+===============================================Experiment Results=================================================
+------------------------------------------------------------------------------------------------------------------
+|                                                     Summary                                                    |
+------------------------------------------------------------------------------------------------------------------
+|ML Task: multiclass-classification                                                                              |
+|Dataset: iris.csv                                                                                               |
+|Label : Label                                                                                                   |
+|Total experiment time : 60,70 Secs                                                                              |
+|Total number of models explored: 6                                                                              |
+------------------------------------------------------------------------------------------------------------------
+|                                              Top 5 models explored                                             |
+------------------------------------------------------------------------------------------------------------------
+|     Trainer                              MicroAccuracy  MacroAccuracy  Duration #Iteration                     |
+|1    LinearSvmOva                                1,0000         1,0000       0,1          6                     |
+|2    AveragedPerceptronOva                       0,8889         0,8889       1,1          1                     |
+|3    SdcaMaximumEntropyMulti                     0,7778         0,8222       0,3          2                     |
+|4    LightGbmMulti                               0,7778         0,8222       0,5          3                     |
+|5    SymbolicSgdLogisticRegressionOva            0,6667         0,6667       0,3          4                     |
+------------------------------------------------------------------------------------------------------------------
+Generated trained model for consumption: C:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\MLModel.zip
+Generated C# code for model consumption: C:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.ConsoleApp
+Check out log file for more information: C:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\logs\debug_log.txt

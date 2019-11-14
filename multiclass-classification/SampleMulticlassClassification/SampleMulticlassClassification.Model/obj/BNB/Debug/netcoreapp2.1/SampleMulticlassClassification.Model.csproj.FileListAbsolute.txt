@@ -1,0 +1,10 @@
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\bin\BNB\Debug\netcoreapp2.1\MLModel.zip
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\bin\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.deps.json
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\bin\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.dll
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\bin\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.pdb
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\obj\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.csprojAssemblyReference.cache
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\obj\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.csproj.CoreCompileInputs.cache
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\obj\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.AssemblyInfoInputs.cache
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\obj\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.AssemblyInfo.cs
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\obj\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.dll
+c:\developing\ML\ml.net\github\mlnet-cli\multiclass-classification\SampleMulticlassClassification\SampleMulticlassClassification.Model\obj\BNB\Debug\netcoreapp2.1\SampleMulticlassClassification.Model.pdb
